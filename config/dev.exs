@@ -3,7 +3,7 @@ import Config
 # Configure your database
 config :auth_tutorial_phoenix, AuthTutorialPhoenix.Repo,
   username: "postgres",
-  password: "Velodrom512",
+  password: "1220",
   hostname: "localhost",
   database: "auth_tutorial_phoenix_dev",
   stacktrace: true,

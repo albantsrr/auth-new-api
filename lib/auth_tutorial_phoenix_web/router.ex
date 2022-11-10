@@ -20,16 +20,21 @@ defmodule AuthTutorialPhoenixWeb.Router do
 
   scope "/api", AuthTutorialPhoenixWeb do
     pipe_through :api
-
     post "/users", UserController, :register
     post"/session/new", SessionController, :new
+    # just added
+    get "/user", UserController, :showUserBy
   end
 
 scope "/api", AuthTutorialPhoenixWeb do
   pipe_through [:api, :auth]
-
   post "/session/refresh", SessionController, :refresh
   post "/session/delete", SessionController, :delete
+
+  # just added
+  get "/users", UserController, :index
+  put "/user/:id", UserController, :update
+  delete "/user/:id", UserController, :delete
 end
 
   # Other s copes may use custom stacks.

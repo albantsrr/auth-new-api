@@ -50,7 +50,7 @@ defmodule AuthTutorialPhoenix.MixProject do
       {:jason, "~> 1.2"},
       {:plug_cowboy, "~> 2.5"},
       {:bcrypt_elixir, "~> 2.0"},
-      {:guardian, "~> 2.0"},
+      {:guardian, "~> 1.0"},
       {:cowboy, "~> 2.1"},
     ]
   end
